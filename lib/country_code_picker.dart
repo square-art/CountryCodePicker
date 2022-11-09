@@ -283,7 +283,7 @@ class CountryCodePickerState extends State<CountryCodePicker> {
 
   void showCountryCodePickerDialog() {
     if (!UniversalPlatform.isAndroid && !UniversalPlatform.isIOS) {
-      showBottomSheet(
+      showMaterialModalBottomSheet(
         // barrierColor: widget.barrierColor ?? Colors.grey.withOpacity(0.5),
         // backgroundColor: widget.backgroundColor ?? Colors.transparent,
         context: context,
