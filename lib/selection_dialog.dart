@@ -194,6 +194,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
       filteredElements = widget.elements
           .where((e) =>
               e.code!.contains(s) ||
+              e.dialCode!.contains(s) ||
               e.name!.toUpperCase().contains(s))
           .toList();
     });
